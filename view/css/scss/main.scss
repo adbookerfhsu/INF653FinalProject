@@ -1,0 +1,111 @@
+$amysred: #f53939;
+$amysdkblue: #132635;
+$amysblue: #367baf;
+$amysmedblue: #1f4b6d;
+$amysltblue: #4eacf5;
+$amystan: #f1bd63;
+$amyslttan: #f7e1bc;
+$amysdkbrown: #462a20;
+$amysgray: #d8dce6;
+$amyswhite: #ffffff;
+$fontRoboto: 'Roboto', sans-serif;
+$maxWidth: 800px;
+$tabletWidth: 600px;
+$phoneWidth: 400px;
+
+
+html {
+    background-color: $amysdkblue;
+}
+
+body {
+    margin-top: 0;
+    font-family: $fontRoboto;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: $amysgray;
+    border: 1px solid $amysdkbrown;
+    box-shadow: 30px 0px 40px rgba(74, 99, 136, 0.4),
+    -30px 0px 40px rgba(74, 99, 136, 0.4);
+}
+
+header {
+    margin: 0;
+    border-bottom: 2px solid $amysmedblue;
+    .center {
+        display: block;
+        align-content: left;
+        width: 75%;
+        margin: 0 auto;
+    }
+   
+   }
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+footer {
+    clear: both;
+    margin-top: 1em;
+    border-top: 2px solid $amysmedblue;
+    p {
+        text-align: center;
+        font-size: 75%;
+        margin: 1rem 0;
+    }
+}
+
+table {
+    background-color: $amyswhite;
+    border: 1px solid $amysmedblue;
+    border-collapse: collapse;
+    td, th {
+        padding: .25rem;
+        border: 1px solid $amysmedblue;
+        vertical-align: top;
+        text-align: left;
+    }
+}
+
+
+.sortbtn {
+    padding: .50rem;
+    background-color: $amysmedblue;
+    color: $amyswhite;
+}
+
+.button {
+    padding: .50rem;
+    background-color: $amysred;
+    color: $amyswhite;
+    }
+
+
+#tableDiv {
+    overflow: auto;
+    width: 100%;
+}
+
+#heading {
+    font-size: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    body{
+        max-width: 60%;
+        font-size: 1.25rem;
+    }
+      
+}
+
+@media screen and (min-width: 600px) and  (max-width: 799px) {
+    body{
+        max-width: 100%;
+        font-size: 1.5rem;
+    }
+   
+}
+
